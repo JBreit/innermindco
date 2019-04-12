@@ -58,6 +58,33 @@ class AuthController extends Controller
         ], 200)->header('Authorization', "Bearer {$token}");
     }
 
+    /**
+     * Log the user out (Invalidate the token).
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function logout()
+    {
+        JWTAuth::invalidate();
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Logged out successfully'
+        ], 200);
+    }
+
+    /**
+     * Refresh a token.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function refresh()
+    {
+        return response([
+            'status' => 'success'
+        ]);
+    }
+
     public function register(RegisterFormRequest $request)
     {
         $credentials = $request->only('email', 'password');
@@ -69,11 +96,11 @@ class AuthController extends Controller
         ]);
 
         try {
-          if (!$token = JWTAuth::attempt($credentials)) {
-            return response()->json(['error' => 'Invalid Credentials'], 401);
-          }
+            if (!$token = JWTAuth::attempt($credentials)) {
+                return response()->json(['error' => 'Invalid Credentials'], 401);
+            }
         } catch (JWTException $e) {
-          return response()->json(['error', 'could_not_create_token'], 500);
+            return response()->json(['error', 'Could Not Create Token'], 500);
         }
 
         return response()->json([
@@ -81,6 +108,34 @@ class AuthController extends Controller
             'token' => $token,
             'user' => $user
         ], 200)->header('Authorization', "Bearer {$token}");
+    }
+
+    /**
+     * The user has been registered.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  mixed  $user
+     * @return mixed
+     */
+    protected function registered(Request $request, $user)
+    {
+        $request->session()->flash('status', "{$user->name} thank you for registering.");
+    }
+
+    /**
+     * Get the token array structure.
+     *
+     * @param  string $token
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    protected function respondWithToken($token)
+    {
+        return response()->json([
+            'access_token' => $token,
+            'token_type' => 'bearer',
+            'expires_in' => auth()->factory()->getTTL() * 60
+        ]);
     }
 
     /**
@@ -97,13 +152,6 @@ class AuthController extends Controller
             'status' => 'success',
             'user' => $user,
             'token' => $token,
-        ]);
-    }
-
-    public function refresh()
-    {
-        return response([
-         'status' => 'success'
         ]);
     }
 }
