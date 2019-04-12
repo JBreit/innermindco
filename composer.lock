@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "360f6729e02551f4a6550bc6be0dadb9",
+    "content-hash": "4731429c7f25ab92eaa813447a972209",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -670,64 +670,6 @@
             "time": "2018-10-12T19:39:35+00:00"
         },
         {
-            "name": "lcobucci/jwt",
-            "version": "3.2.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "82be04b4753f8b7693b62852b7eab30f97524f9b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/82be04b4753f8b7693b62852b7eab30f97524f9b",
-                "reference": "82be04b4753f8b7693b62852b7eab30f97524f9b",
-                "shasum": ""
-            },
-            "require": {
-                "ext-openssl": "*",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "mdanter/ecc": "~0.3.1",
-                "mikey179/vfsstream": "~1.5",
-                "phpmd/phpmd": "~2.2",
-                "phpunit/php-invoker": "~1.1",
-                "phpunit/phpunit": "~4.5",
-                "squizlabs/php_codesniffer": "~2.3"
-            },
-            "suggest": {
-                "mdanter/ecc": "Required to use Elliptic Curves based algorithms."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Lcobucci\\JWT\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Luís Otávio Cobucci Oblonczyk",
-                    "email": "lcobucci@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
-            "keywords": [
-                "JWS",
-                "jwt"
-            ],
-            "time": "2018-11-11T12:22:26+00:00"
-        },
-        {
             "name": "league/flysystem",
             "version": "1.0.51",
             "source": {
@@ -888,69 +830,6 @@
                 "psr-3"
             ],
             "time": "2018-11-05T09:00:11+00:00"
-        },
-        {
-            "name": "namshi/jose",
-            "version": "7.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/namshi/jose.git",
-                "reference": "89a24d7eb3040e285dd5925fcad992378b82bcff"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/namshi/jose/zipball/89a24d7eb3040e285dd5925fcad992378b82bcff",
-                "reference": "89a24d7eb3040e285dd5925fcad992378b82bcff",
-                "shasum": ""
-            },
-            "require": {
-                "ext-date": "*",
-                "ext-hash": "*",
-                "ext-json": "*",
-                "ext-pcre": "*",
-                "ext-spl": "*",
-                "php": ">=5.5",
-                "symfony/polyfill-php56": "^1.0"
-            },
-            "require-dev": {
-                "phpseclib/phpseclib": "^2.0",
-                "phpunit/phpunit": "^4.5|^5.0",
-                "satooshi/php-coveralls": "^1.0"
-            },
-            "suggest": {
-                "ext-openssl": "Allows to use OpenSSL as crypto engine.",
-                "phpseclib/phpseclib": "Allows to use Phpseclib as crypto engine, use version ^2.0."
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Namshi\\JOSE\\": "src/Namshi/JOSE/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alessandro Nadalin",
-                    "email": "alessandro.nadalin@gmail.com"
-                },
-                {
-                    "name": "Alessandro Cinelli (cirpo)",
-                    "email": "alessandro.cinelli@gmail.com"
-                }
-            ],
-            "description": "JSON Object Signing and Encryption library for PHP.",
-            "keywords": [
-                "JSON Web Signature",
-                "JSON Web Token",
-                "JWS",
-                "json",
-                "jwt",
-                "token"
-            ],
-            "time": "2016-12-05T07:27:31+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -1168,117 +1047,6 @@
                 "random"
             ],
             "time": "2018-07-02T15:55:56+00:00"
-        },
-        {
-            "name": "phploc/phploc",
-            "version": "5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/phploc.git",
-                "reference": "5b714ccb7cb8ca29ccf9caf6eb1aed0131d3a884"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phploc/zipball/5b714ccb7cb8ca29ccf9caf6eb1aed0131d3a884",
-                "reference": "5b714ccb7cb8ca29ccf9caf6eb1aed0131d3a884",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2",
-                "sebastian/finder-facade": "^1.1",
-                "sebastian/version": "^2.0",
-                "symfony/console": "^4.0"
-            },
-            "bin": [
-                "phploc"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.0-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
-                }
-            ],
-            "description": "A tool for quickly measuring the size of a PHP project.",
-            "homepage": "https://github.com/sebastianbergmann/phploc",
-            "time": "2019-03-16T10:41:19+00:00"
-        },
-        {
-            "name": "phpmetrics/phpmetrics",
-            "version": "v2.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpmetrics/PhpMetrics.git",
-                "reference": "39095017413805cd6d9ada16cfaf8aaffcb2fec4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpmetrics/PhpMetrics/zipball/39095017413805cd6d9ada16cfaf8aaffcb2fec4",
-                "reference": "39095017413805cd6d9ada16cfaf8aaffcb2fec4",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "ext-tokenizer": "*",
-                "nikic/php-parser": "^3|^4",
-                "php": ">=5.5"
-            },
-            "replace": {
-                "halleck45/php-metrics": "*",
-                "halleck45/phpmetrics": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": ">=4.8.27,<=5.7.13",
-                "sebastian/comparator": ">=1.2.3"
-            },
-            "bin": [
-                "bin/phpmetrics"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Hal\\": "./src/"
-                },
-                "files": [
-                    "./src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jean-François Lépine",
-                    "email": "lepinejeanfrancois@yahoo.fr",
-                    "homepage": "http://www.lepine.pro",
-                    "role": "Copyright Holder"
-                }
-            ],
-            "description": "Static analyzer tool for PHP : Coupling, Cyclomatic complexity, Maintainability Index, Halstead's metrics... and more !",
-            "homepage": "http://www.phpmetrics.org",
-            "keywords": [
-                "analysis",
-                "qa",
-                "quality",
-                "testing"
-            ],
-            "time": "2018-07-10T17:19:33+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -1629,88 +1397,6 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
-        },
-        {
-            "name": "sebastian/finder-facade",
-            "version": "1.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/finder-facade.git",
-                "reference": "4a3174709c2dc565fe5fb26fcf827f6a1fc7b09f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/finder-facade/zipball/4a3174709c2dc565fe5fb26fcf827f6a1fc7b09f",
-                "reference": "4a3174709c2dc565fe5fb26fcf827f6a1fc7b09f",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/finder": "~2.3|~3.0|~4.0",
-                "theseer/fdomdocument": "~1.3"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
-                }
-            ],
-            "description": "FinderFacade is a convenience wrapper for Symfony's Finder component.",
-            "homepage": "https://github.com/sebastianbergmann/finder-facade",
-            "time": "2017-11-18T17:31:49+00:00"
-        },
-        {
-            "name": "sebastian/version",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/version.git",
-                "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/99732be0ddb3361e16ad77b68ba41efc8e979019",
-                "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
-                }
-            ],
-            "description": "Library that helps with managing the version number of Git-hosted PHP projects",
-            "homepage": "https://github.com/sebastianbergmann/version",
-            "time": "2016-10-03T07:35:21+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2518,62 +2204,6 @@
             "time": "2019-02-06T07:57:58+00:00"
         },
         {
-            "name": "symfony/polyfill-php56",
-            "version": "v1.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php56.git",
-                "reference": "f4dddbc5c3471e1b700a147a20ae17cdb72dbe42"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/f4dddbc5c3471e1b700a147a20ae17cdb72dbe42",
-                "reference": "f4dddbc5c3471e1b700a147a20ae17cdb72dbe42",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "symfony/polyfill-util": "~1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.11-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php56\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 5.6+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2019-02-06T07:57:58+00:00"
-        },
-        {
             "name": "symfony/polyfill-php72",
             "version": "v1.11.0",
             "source": {
@@ -2627,58 +2257,6 @@
                 "shim"
             ],
             "time": "2019-02-06T07:57:58+00:00"
-        },
-        {
-            "name": "symfony/polyfill-util",
-            "version": "v1.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-util.git",
-                "reference": "b46c6cae28a3106735323f00a0c38eccf2328897"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/b46c6cae28a3106735323f00a0c38eccf2328897",
-                "reference": "b46c6cae28a3106735323f00a0c38eccf2328897",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.11-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Util\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony utilities for portability of PHP codes",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compat",
-                "compatibility",
-                "polyfill",
-                "shim"
-            ],
-            "time": "2019-02-08T14:16:39+00:00"
         },
         {
             "name": "symfony/process",
@@ -2955,46 +2533,6 @@
             "time": "2019-02-23T15:17:42+00:00"
         },
         {
-            "name": "theseer/fdomdocument",
-            "version": "1.6.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/theseer/fDOMDocument.git",
-                "reference": "6e8203e40a32a9c770bcb62fe37e68b948da6dca"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/theseer/fDOMDocument/zipball/6e8203e40a32a9c770bcb62fe37e68b948da6dca",
-                "reference": "6e8203e40a32a9c770bcb62fe37e68b948da6dca",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "lib-libxml": "*",
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "lead"
-                }
-            ],
-            "description": "The classes contained within this repository extend the standard DOM to use exceptions at all occasions of errors instead of PHP warnings or notices. They also add various custom methods and shortcuts for convenience and to simplify the usage of DOM.",
-            "homepage": "https://github.com/theseer/fDOMDocument",
-            "time": "2017-06-30T11:53:12+00:00"
-        },
-        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.1",
             "source": {
@@ -3040,81 +2578,6 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2017-11-27T11:13:29+00:00"
-        },
-        {
-            "name": "tymon/jwt-auth",
-            "version": "1.0.0-rc.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tymondesigns/jwt-auth.git",
-                "reference": "f72b8eb0deff2c002d40a8b0411a546c28ebec98"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/f72b8eb0deff2c002d40a8b0411a546c28ebec98",
-                "reference": "f72b8eb0deff2c002d40a8b0411a546c28ebec98",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/auth": "^5.1",
-                "illuminate/contracts": "^5.1",
-                "illuminate/http": "^5.1",
-                "illuminate/support": "^5.1",
-                "lcobucci/jwt": "^3.2",
-                "namshi/jose": "^7.0",
-                "nesbot/carbon": "^1.0 || ^2.0",
-                "php": "^5.5.9 || ^7.0"
-            },
-            "require-dev": {
-                "cartalyst/sentinel": "2.0.*",
-                "illuminate/console": "^5.1",
-                "illuminate/database": "^5.1",
-                "illuminate/routing": "^5.1",
-                "mockery/mockery": ">=0.9.9",
-                "phpunit/phpunit": "~4.8 || ~6.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "1.0-dev"
-                },
-                "laravel": {
-                    "aliases": {
-                        "JWTAuth": "Tymon\\JWTAuth\\Facades\\JWTAuth",
-                        "JWTFactory": "Tymon\\JWTAuth\\Facades\\JWTFactory"
-                    },
-                    "providers": [
-                        "Tymon\\JWTAuth\\Providers\\LaravelServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Tymon\\JWTAuth\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sean Tymon",
-                    "email": "tymon148@gmail.com",
-                    "homepage": "https://tymon.xyz",
-                    "role": "Developer"
-                }
-            ],
-            "description": "JSON Web Token Authentication for Laravel and Lumen",
-            "homepage": "https://github.com/tymondesigns/jwt-auth",
-            "keywords": [
-                "Authentication",
-                "JSON Web Token",
-                "auth",
-                "jwt",
-                "laravel"
-            ],
-            "time": "2019-03-05T09:05:32+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3170,51 +2633,6 @@
         }
     ],
     "packages-dev": [
-        {
-            "name": "2bj/phanybar",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/2bj/Phanybar.git",
-                "reference": "88ff671e18f30c2047a34f8cf2465a7ff93c819b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/2bj/Phanybar/zipball/88ff671e18f30c2047a34f8cf2465a7ff93c819b",
-                "reference": "88ff671e18f30c2047a34f8cf2465a7ff93c819b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "bin": [
-                "bin/phanybar"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Bakyt\\": [
-                        "src/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bakyt Turgumbaev",
-                    "email": "dev2bj@gmail.com"
-                }
-            ],
-            "description": "Control AnyBar from your php",
-            "keywords": [
-                "anybar",
-                "phanybar"
-            ],
-            "time": "2015-03-06T12:14:28+00:00"
-        },
         {
             "name": "beyondcode/laravel-dump-server",
             "version": "1.2.2",
@@ -3277,273 +2695,6 @@
             "time": "2018-10-04T07:22:24+00:00"
         },
         {
-            "name": "clue/stdio-react",
-            "version": "v2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/clue/reactphp-stdio.git",
-                "reference": "43d24e4617b2d001554ebbe78e3ae968e9114b21"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/clue/reactphp-stdio/zipball/43d24e4617b2d001554ebbe78e3ae968e9114b21",
-                "reference": "43d24e4617b2d001554ebbe78e3ae968e9114b21",
-                "shasum": ""
-            },
-            "require": {
-                "clue/term-react": "^1.0 || ^0.1.1",
-                "clue/utf8-react": "^1.0 || ^0.1",
-                "php": ">=5.3",
-                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3",
-                "react/stream": "^1.0 || ^0.7 || ^0.6"
-            },
-            "require-dev": {
-                "clue/arguments": "^2.0",
-                "clue/commander": "^1.2",
-                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35"
-            },
-            "suggest": {
-                "ext-mbstring": "Using ext-mbstring should provide slightly better performance for handling I/O"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Clue\\React\\Stdio\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christian Lück",
-                    "email": "christian@lueck.tv"
-                }
-            ],
-            "description": "Async, event-driven console input & output (STDIN, STDOUT) for truly interactive CLI applications, built on top of ReactPHP",
-            "homepage": "https://github.com/clue/reactphp-stdio",
-            "keywords": [
-                "async",
-                "autocomplete",
-                "autocompletion",
-                "cli",
-                "history",
-                "interactive",
-                "reactphp",
-                "readline",
-                "stdin",
-                "stdio",
-                "stdout"
-            ],
-            "time": "2018-09-03T11:39:08+00:00"
-        },
-        {
-            "name": "clue/term-react",
-            "version": "v1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/clue/reactphp-term.git",
-                "reference": "3cec1164073455a85a3f2b3c3fe6db2170d21c2a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/clue/reactphp-term/zipball/3cec1164073455a85a3f2b3c3fe6db2170d21c2a",
-                "reference": "3cec1164073455a85a3f2b3c3fe6db2170d21c2a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3",
-                "react/stream": "^1.0 || ^0.7"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.0 || ^4.8",
-                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Clue\\React\\Term\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christian Lück",
-                    "email": "christian@lueck.tv"
-                }
-            ],
-            "description": "Streaming terminal emulator, built on top of ReactPHP",
-            "homepage": "https://github.com/clue/reactphp-term",
-            "keywords": [
-                "C0",
-                "CSI",
-                "ansi",
-                "apc",
-                "ascii",
-                "c1",
-                "control codes",
-                "dps",
-                "osc",
-                "pm",
-                "reactphp",
-                "streaming",
-                "terminal",
-                "vt100",
-                "xterm"
-            ],
-            "time": "2018-07-09T08:20:33+00:00"
-        },
-        {
-            "name": "clue/utf8-react",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/clue/php-utf8-react.git",
-                "reference": "c6111a22e1056627c119233ff5effe00f5d3cc1d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/clue/php-utf8-react/zipball/c6111a22e1056627c119233ff5effe00f5d3cc1d",
-                "reference": "c6111a22e1056627c119233ff5effe00f5d3cc1d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3",
-                "react/stream": "^1.0 || ^0.7 || ^0.6 || ^0.5 || ^0.4 || ^0.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.0 || ^4.8",
-                "react/stream": "^1.0 || ^0.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Clue\\React\\Utf8\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christian Lück",
-                    "email": "christian@lueck.tv"
-                }
-            ],
-            "description": "Streaming UTF-8 parser, built on top of ReactPHP",
-            "homepage": "https://github.com/clue/php-utf8-react",
-            "keywords": [
-                "reactphp",
-                "streaming",
-                "unicode",
-                "utf-8",
-                "utf8"
-            ],
-            "time": "2017-07-06T07:43:22+00:00"
-        },
-        {
-            "name": "codedungeon/php-cli-colors",
-            "version": "1.10.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mikeerickson/php-cli-colors.git",
-                "reference": "5649ef76ec0c9ed626e95bf40fdfaf4b8efcf79b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mikeerickson/php-cli-colors/zipball/5649ef76ec0c9ed626e95bf40fdfaf4b8efcf79b",
-                "reference": "5649ef76ec0c9ed626e95bf40fdfaf4b8efcf79b",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": ">=5.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Codedungeon\\PHPCliColors\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mike Erickson",
-                    "email": "codedungeon@gmail.com"
-                }
-            ],
-            "description": "PHP Package for using color output in CLI commands",
-            "homepage": "https://github.com/mikeerickson/php-cli-colors",
-            "keywords": [
-                "color",
-                "colors",
-                "composer",
-                "package",
-                "php"
-            ],
-            "time": "2018-05-17T01:34:14+00:00"
-        },
-        {
-            "name": "codedungeon/phpunit-result-printer",
-            "version": "0.26.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mikeerickson/phpunit-pretty-result-printer.git",
-                "reference": "70efe139f174954392582103355a1b4a3d9022e5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mikeerickson/phpunit-pretty-result-printer/zipball/70efe139f174954392582103355a1b4a3d9022e5",
-                "reference": "70efe139f174954392582103355a1b4a3d9022e5",
-                "shasum": ""
-            },
-            "require": {
-                "2bj/phanybar": "^1.0",
-                "codedungeon/php-cli-colors": "^1.10.2",
-                "hassankhan/config": "^0.11.2",
-                "php": "^7.1",
-                "symfony/yaml": "^2.7|^3.0|^4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "8.0.*",
-                "spatie/phpunit-watcher": "^1.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Codedungeon\\PHPUnitPrettyResultPrinter\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mike Erickson",
-                    "email": "codedungeon@gmail.com"
-                }
-            ],
-            "description": "PHPUnit Pretty Result Printer",
-            "keywords": [
-                "TDD",
-                "composer",
-                "package",
-                "phpunit",
-                "printer",
-                "result-printer",
-                "testing"
-            ],
-            "time": "2019-02-28T18:52:43+00:00"
-        },
-        {
             "name": "doctrine/instantiator",
             "version": "1.2.0",
             "source": {
@@ -3598,49 +2749,6 @@
                 "instantiate"
             ],
             "time": "2019-03-17T17:37:11+00:00"
-        },
-        {
-            "name": "evenement/evenement",
-            "version": "v3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/igorw/evenement.git",
-                "reference": "531bfb9d15f8aa57454f5f0285b18bec903b8fb7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/igorw/evenement/zipball/531bfb9d15f8aa57454f5f0285b18bec903b8fb7",
-                "reference": "531bfb9d15f8aa57454f5f0285b18bec903b8fb7",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Evenement": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Igor Wiedler",
-                    "email": "igor@wiedler.ch"
-                }
-            ],
-            "description": "Événement is a very simple event dispatching library for PHP",
-            "keywords": [
-                "event-dispatcher",
-                "event-emitter"
-            ],
-            "time": "2017-07-23T21:35:13+00:00"
         },
         {
             "name": "filp/whoops",
@@ -3800,119 +2908,6 @@
                 "test"
             ],
             "time": "2016-01-20T08:20:44+00:00"
-        },
-        {
-            "name": "hassankhan/config",
-            "version": "0.11.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hassankhan/config.git",
-                "reference": "7fbc236c32dc6cc53a7b00992a2739cf8b41c085"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hassankhan/config/zipball/7fbc236c32dc6cc53a7b00992a2739cf8b41c085",
-                "reference": "7fbc236c32dc6cc53a7b00992a2739cf8b41c085",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0",
-                "scrutinizer/ocular": "~1.1",
-                "squizlabs/php_codesniffer": "~2.2"
-            },
-            "suggest": {
-                "symfony/yaml": "~2.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Noodlehaus\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Hassan Khan",
-                    "homepage": "http://hassankhan.me/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Lightweight configuration file loader that supports PHP, INI, XML, JSON, and YAML files",
-            "homepage": "http://hassankhan.me/config/",
-            "keywords": [
-                "config",
-                "configuration",
-                "ini",
-                "json",
-                "microphp",
-                "unframework",
-                "xml",
-                "yaml",
-                "yml"
-            ],
-            "time": "2017-11-07T22:49:43+00:00"
-        },
-        {
-            "name": "jolicode/jolinotif",
-            "version": "v2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jolicode/JoliNotif.git",
-                "reference": "0b5f786c5f181b3916df616ca191892713257662"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jolicode/JoliNotif/zipball/0b5f786c5f181b3916df616ca191892713257662",
-                "reference": "0b5f786c5f181b3916df616ca191892713257662",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0",
-                "symfony/process": "~3.3|~4.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "~2.0",
-                "symfony/phpunit-bridge": "^3.3"
-            },
-            "bin": [
-                "jolinotif"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Joli\\JoliNotif\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Loïck Piera",
-                    "email": "pyrech@gmail.com"
-                }
-            ],
-            "description": "Send desktop notifications on Windows, Linux, MacOS.",
-            "keywords": [
-                "MAC",
-                "growl",
-                "linux",
-                "notification",
-                "windows"
-            ],
-            "time": "2019-02-26T18:10:50+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -4745,94 +3740,6 @@
             "time": "2019-03-26T13:23:54+00:00"
         },
         {
-            "name": "react/event-loop",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/event-loop.git",
-                "reference": "a0ecac955c67b57c40fe4a1b88a7cca1b58c982d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/a0ecac955c67b57c40fe4a1b88a7cca1b58c982d",
-                "reference": "a0ecac955c67b57c40fe4a1b88a7cca1b58c982d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.0 || ^6.4 || ^5.7 || ^4.8.35"
-            },
-            "suggest": {
-                "ext-event": "~1.0 for ExtEventLoop",
-                "ext-pcntl": "For signal handling support when using the StreamSelectLoop",
-                "ext-uv": "* for ExtUvLoop"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "React\\EventLoop\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "ReactPHP's core reactor event loop that libraries can use for evented I/O.",
-            "keywords": [
-                "asynchronous",
-                "event-loop"
-            ],
-            "time": "2019-02-07T16:19:49+00:00"
-        },
-        {
-            "name": "react/stream",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/stream.git",
-                "reference": "50426855f7a77ddf43b9266c22320df5bf6c6ce6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/stream/zipball/50426855f7a77ddf43b9266c22320df5bf6c6ce6",
-                "reference": "50426855f7a77ddf43b9266c22320df5bf6c6ce6",
-                "shasum": ""
-            },
-            "require": {
-                "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
-                "php": ">=5.3.8",
-                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3.5"
-            },
-            "require-dev": {
-                "clue/stream-filter": "~1.2",
-                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "React\\Stream\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Event-driven readable and writable streams for non-blocking I/O in ReactPHP",
-            "keywords": [
-                "event-driven",
-                "io",
-                "non-blocking",
-                "pipe",
-                "reactphp",
-                "readable",
-                "stream",
-                "writable"
-            ],
-            "time": "2019-01-01T16:15:09+00:00"
-        },
-        {
             "name": "sebastian/code-unit-reverse-lookup",
             "version": "1.0.1",
             "source": {
@@ -5356,118 +4263,47 @@
             "time": "2018-10-04T04:07:39+00:00"
         },
         {
-            "name": "spatie/phpunit-watcher",
-            "version": "1.8.3",
+            "name": "sebastian/version",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/spatie/phpunit-watcher.git",
-                "reference": "ad2ce98af8722a2e5ec628dc32ffb49ef488f6cc"
+                "url": "https://github.com/sebastianbergmann/version.git",
+                "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/phpunit-watcher/zipball/ad2ce98af8722a2e5ec628dc32ffb49ef488f6cc",
-                "reference": "ad2ce98af8722a2e5ec628dc32ffb49ef488f6cc",
+                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/99732be0ddb3361e16ad77b68ba41efc8e979019",
+                "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019",
                 "shasum": ""
             },
             "require": {
-                "clue/stdio-react": "^2.0",
-                "jolicode/jolinotif": "^2.0",
-                "php": "^7.0",
-                "symfony/console": "^3.0|^4.0",
-                "symfony/process": "^3.0|^4.0",
-                "symfony/yaml": "^3.0|^4.0",
-                "yosymfony/resource-watcher": "^1.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0|^7.0"
-            },
-            "bin": [
-                "phpunit-watcher"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\PhpUnitWatcher\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Automatically rerun PHPUnit tests when source code changes",
-            "homepage": "https://github.com/spatie/phpunit-watcher",
-            "keywords": [
-                "phpunit-watcher",
-                "spatie"
-            ],
-            "time": "2019-02-09T21:40:43+00:00"
-        },
-        {
-            "name": "symfony/yaml",
-            "version": "v4.2.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "6712daf03ee25b53abb14e7e8e0ede1a770efdb1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/6712daf03ee25b53abb14e7e8e0ede1a770efdb1",
-                "reference": "6712daf03ee25b53abb14e7e8e0ede1a770efdb1",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/polyfill-ctype": "~1.8"
-            },
-            "conflict": {
-                "symfony/console": "<3.4"
-            },
-            "require-dev": {
-                "symfony/console": "~3.4|~4.0"
-            },
-            "suggest": {
-                "symfony/console": "For validating YAML files using the lint command"
+                "php": ">=5.6"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.2-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
+                "classmap": [
+                    "src/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
-            "time": "2019-03-30T15:58:42+00:00"
+            "description": "Library that helps with managing the version number of Git-hosted PHP projects",
+            "homepage": "https://github.com/sebastianbergmann/version",
+            "time": "2016-10-03T07:35:21+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -5559,59 +4395,6 @@
                 "validate"
             ],
             "time": "2018-12-25T11:19:39+00:00"
-        },
-        {
-            "name": "yosymfony/resource-watcher",
-            "version": "v1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yosymfony/resource-watcher.git",
-                "reference": "8a8c8c21515eaec0b3f8fc2b5aa15c6f8bd8ca98"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yosymfony/resource-watcher/zipball/8a8c8c21515eaec0b3f8fc2b5aa15c6f8bd8ca98",
-                "reference": "8a8c8c21515eaec0b3f8fc2b5aa15c6f8bd8ca98",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5",
-                "symfony/finder": "^2.7|^3.0|^4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.0",
-                "symfony/filesystem": "^2.7|^3.0|^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Yosymfony\\ResourceWatcher\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Victor Puertas",
-                    "email": "vpgugr@gmail.com"
-                }
-            ],
-            "description": "A simple resource watcher using Symfony Finder",
-            "homepage": "http://yosymfony.com",
-            "keywords": [
-                "finder",
-                "resources",
-                "symfony",
-                "watcher"
-            ],
-            "time": "2018-02-18T08:28:25+00:00"
         }
     ],
     "aliases": [],
