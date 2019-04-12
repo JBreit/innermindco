@@ -50,12 +50,7 @@ class AuthController extends Controller
             ], 500);
         }
 
-        return response()->json([
-            'status' => 'success',
-            'data' => [
-                'token' => $token
-            ]
-        ], 200)->header('Authorization', "Bearer {$token}");
+        return $this->respondWithToken($token);
     }
 
     /**
@@ -80,9 +75,7 @@ class AuthController extends Controller
      */
     public function refresh()
     {
-        return response([
-            'status' => 'success'
-        ]);
+        return $this->respondWithToken($this->guard()->refresh());
     }
 
     public function register(RegisterFormRequest $request)
@@ -135,7 +128,7 @@ class AuthController extends Controller
             'access_token' => $token,
             'token_type' => 'bearer',
             'expires_in' => auth()->factory()->getTTL() * 60
-        ]);
+        ], 200)->header('Authorization', "Bearer {$token}");
     }
 
     /**
@@ -145,13 +138,25 @@ class AuthController extends Controller
      */
     public function user(Request $request)
     {
-        $user = auth()->user();
-        $token = JWTAuth::fromUser($user);
+        // $user = auth()->user();
+        // $token = JWTAuth::fromUser($user);
 
-        return response()->json([
-            'status' => 'success',
-            'user' => $user,
-            'token' => $token,
-        ]);
+        // return response()->json([
+        //     'status' => 'success',
+        //     'user' => $user,
+        //     'token' => $token,
+        // ]);
+
+        return response()->json($this->guard()->user());
+    }
+
+    /**
+     * Get the guard to be used during authentication.
+     *
+     * @return \Illuminate\Contracts\Auth\Guard
+     */
+    private function guard()
+    {
+        return \Auth::guard();
     }
 }
