@@ -99,4 +99,11 @@ class AuthController extends Controller
             'token' => $token,
         ]);
     }
+
+    public function refresh()
+    {
+        return response([
+         'status' => 'success'
+        ]);
+    }
 }
