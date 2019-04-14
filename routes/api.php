@@ -10,4 +10,8 @@ Route::group(['middleware' => 'jwt.auth'], function () {
     Route::post('logout', 'API\AuthController@logout');
 });
 
+Route::group(['middleware' => 'jwt.verify'], function () {
+    Route::get('/test', 'API\AuthController@getAuthenticatedUser');
+});
+
 Route::middleware('jwt.refresh')->get('/token/refresh', 'API\AuthController@refresh');

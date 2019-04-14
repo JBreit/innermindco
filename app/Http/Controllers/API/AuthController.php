@@ -3,10 +3,13 @@
 namespace App\Http\Controllers\API;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\RegisterFormRequest;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\RegisterFormRequest;
 use Tymon\JWTAuth\Exceptions\JWTException;
+use Tymon\JWTAuth\Exceptions\TokenExpiredException;
+use Tymon\JWTAuth\Exceptions\TokenInvalidException;
 use App\User;
+use Auth;
 use JWTAuth;
 use Validator;
 
@@ -53,6 +56,31 @@ class AuthController extends Controller
         return $this->respondWithToken($token);
     }
 
+    public function getAuthenticatedUser()
+    {
+        try {
+
+            if (! $user = JWTAuth::parseToken()->authenticate()) {
+                return response()->json(['user_not_found'], 404);
+            }
+
+        } catch (Tymon\JWTAuth\Exceptions\TokenExpiredException $e) {
+
+            return response()->json(['token_expired'], $e->getStatusCode());
+
+        } catch (Tymon\JWTAuth\Exceptions\TokenInvalidException $e) {
+
+            return response()->json(['token_invalid'], $e->getStatusCode());
+
+        } catch (Tymon\JWTAuth\Exceptions\JWTException $e) {
+
+            return response()->json(['token_absent'], $e->getStatusCode());
+
+        }
+
+        return response()->json(compact('user'));
+    }
+
     /**
      * Log the user out (Invalidate the token).
      *
@@ -78,6 +106,12 @@ class AuthController extends Controller
         return $this->respondWithToken($this->guard()->refresh());
     }
 
+    /**
+     * API Register, on success return JWT Auth token
+     *
+     * @param Request $request
+     * @return JsonResponse
+     */
     public function register(RegisterFormRequest $request)
     {
         $credentials = $request->only('email', 'password');
@@ -119,10 +153,9 @@ class AuthController extends Controller
      * Get the token array structure.
      *
      * @param  string $token
-     *
      * @return \Illuminate\Http\JsonResponse
      */
-    protected function respondWithToken($token)
+    private function respondWithToken($token)
     {
         return response()->json([
             'access_token' => $token,
@@ -157,6 +190,6 @@ class AuthController extends Controller
      */
     private function guard()
     {
-        return \Auth::guard();
+        return Auth::guard();
     }
 }
