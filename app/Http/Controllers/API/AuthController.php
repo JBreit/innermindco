@@ -3,15 +3,17 @@
 namespace App\Http\Controllers\API;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
+
+use App\User;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\RegisterFormRequest;
+
 use Tymon\JWTAuth\Exceptions\JWTException;
 use Tymon\JWTAuth\Exceptions\TokenExpiredException;
 use Tymon\JWTAuth\Exceptions\TokenInvalidException;
-use App\User;
-use Auth;
-use JWTAuth;
-use Validator;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class AuthController extends Controller
 {
