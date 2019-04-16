@@ -27,6 +27,19 @@ class RegisterFormRequest extends FormRequest
             'name' => 'required|string|unique:users',
             'email' => 'required|email|unique:users',
             'password' => 'required|string|min:6|max:10',
+            'password_confirmation' => 'required|string|min:6|max:10',
+        ];
+    }
+
+    /**
+     * Get the error messages for the defined validation rules.
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+
         ];
     }
 }
