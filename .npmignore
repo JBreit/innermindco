@@ -1,0 +1,7 @@
+.*
+*.tgz
+
+docs
+test
+
+TODO.md
