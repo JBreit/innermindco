@@ -9,7 +9,7 @@ module.exports = {
   ],
   LICENSE: ['npx prettier --write'],
   'package.json': [
-    'npx prettier --config prettier.config.js ./package.json --write',
+    'npx prettier --config prettier.config.cjs ./package.json --write',
     'npm run prettier:package',
   ],
 };

@@ -1,0 +1,124 @@
+{
+  "private": false,
+  "name": "innermindco",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "author": "JBreit <jason.breitigan@gmail.com>",
+  "homepage": "https://github.com/JBreit/innermindco#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JBreit/innermindco.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JBreit/innermindco/issues"
+  },
+  "type": "commonjs",
+  "main": "./src/index.ts",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "browserslist": "npx browserslist",
+    "browserslist:lint": "npx browserslist-lint",
+    "build": "tsc --build --verbose",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "clean": "rimraf ./dist",
+    "commit": "cz",
+    "lint": "npx eslint . --cache --max-warnings=0",
+    "lint:fix": "npx eslint . --cache --max-warnings=0 --fix",
+    "mdlint": "npx markdownlint .",
+    "mdlint:fix": "npx markdownlint . --fix",
+    "prepare": "npx husky",
+    "prettier:editorconfig": "npx prettier --config ./prettier.config.cjs --write ./.editorconfig",
+    "prettier:format": "npx prettier --config ./prettier.config.cjs --write ./src/**/*.ts",
+    "prettier:package": "npx prettier-package-json --write",
+    "prettier:watch": "npx onchange ./src/**/*.ts -- prettier --write {{changed}}",
+    "test": "npx jest --config=jest.config.ts --verbose",
+    "test:coverage": "rimraf ./tests/coverage && npx jest --config=jest.config.ts --verbose --coverage",
+    "test:watch": "npx jest --config=jest.config.ts --verbose --watchAll -i",
+    "update": "ncu --doctor -u",
+    "preversion": "npm run test",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./cz.adapter.cjs"
+    }
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "peerDependencies": {
+    "@commitlint/cz-commitlint": "^19.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cz-commitlint": "*",
+    "@jest/globals": "^29.7.0",
+    "@lhci/cli": "^0.13.0",
+    "@tsconfig/node21": "^21.0.3",
+    "@types/core-js": "^2.5.8",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.11",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "browserslist": "^4.23.0",
+    "commitizen": "^4.3.0",
+    "conventional-changelog": "^6.0.0",
+    "conventional-changelog-cli": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "cz-git": "^1.9.1",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^28.5.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-watch": "^8.0.0",
+    "git-commit-msg-linter": "^5.0.7",
+    "git-rev-sync": "^3.0.2",
+    "glob": "^10.3.14",
+    "glob-all": "^3.3.1",
+    "husky": "^9.0.11",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.2.2",
+    "markdownlint": "^0.34.0",
+    "markdownlint-cli": "^0.40.0",
+    "onchange": "^7.1.0",
+    "prettier": "^3.2.5",
+    "prettier-package-json": "^2.8.0",
+    "prettier-plugin-ini": "^1.1.0",
+    "prettier-plugin-sh": "^0.14.0",
+    "prettier-plugin-sql": "^0.18.0",
+    "rimraf": "^5.0.6",
+    "semver": "^7.6.2",
+    "shelljs": "^0.8.5",
+    "supertest": "^7.0.0",
+    "synk": "^0.0.2",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typedoc": "^0.25.13",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.8.0",
+    "validate-branch-name": "^1.3.0"
+  },
+  "keywords": [
+    "boilerplate",
+    "typescript"
+  ],
+  "engines": {
+    "node": "^20.6.0 || ^21.1.0 || ^21.3.0 || >=22.0.0",
+    "npm": ">=10.5.0"
+  }
+}
