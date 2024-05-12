@@ -1,0 +1,185 @@
+{
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    // "source.sort.json": "explicit"
+  },
+
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": true,
+  "editor.linkedEditing": true,
+  "editor.tabSize": 2,
+
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.format.enable": true,
+  "eslint.run": "onType",
+
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
+
+  "explorer.confirmDelete": false,
+
+  "files.eol": "\n",
+
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/node_modules": false
+  },
+
+  "git.enableSmartCommit": true,
+
+  "gitlens.graph.layout": "editor",
+  "gitlens.graph.minimap.enabled": false,
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  "prettier.configPath": "./prettier.config.cjs",
+
+  "search.exclude": {
+    "**/node_modules": true
+  },
+
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "window.zoomLevel": 1,
+
+  "workbench.colorTheme": "One Dark Space Gray",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "none",
+
+  "vsicons.customIconFolderPath": "C:\\Users\\%username%\\AppData\\Roaming\\Code\\User\\vsicons-custom-icons",
+  "vsicons.associations.files": [
+    {
+      "extensions": [
+        ".adapter.cjs",
+        ".adapter.js",
+        ".adapter.ts"
+      ],
+      "format": "svg",
+      "icon": "commitizen"
+    },
+    {
+      "extensions": [
+        ".env.development",
+        ".env.development.local",
+        ".env.example",
+        ".env.local",
+        ".env.test",
+        ".env"
+      ],
+      "format": "svg",
+      "icon": "config"
+    },
+    {
+      "extensions": [],
+      "filename": true,
+      "format": "svg",
+      "icon": "git"
+    },
+    {
+      "extensions": [
+        "applypatch-msg",
+        "commit-msg",
+        "post-applypatch",
+        "post-checkout",
+        "post-commit",
+        "post-merge",
+        "post-rewrite",
+        "pre-applypatch",
+        "pre-auto-gc",
+        "pre-commit",
+        "pre-push",
+        "pre-rebase",
+        "prepare-commit-msg"
+      ],
+      "filenamesGlob": [],
+      "filename": true,
+      "format": "svg",
+      "icon": "husky"
+    },
+    {
+      "filename": true,
+      "filenamesGlob": [
+        "extensions",
+        "launch",
+        "settings",
+        "sftp",
+        "tasks",
+        "vscodeignore"
+      ],
+      "format": "svg",
+      "extensionsGlob": ["json"],
+      "icon": "vscode"
+    }
+  ],
+
+  "vsicons.associations.folders": [
+    {
+      "extensions": [
+        "repl"
+      ],
+      "format": "svg",
+      "icon": "cli"
+    },
+    {
+      "extensions": [
+        "core"
+      ],
+      "format": "svg",
+      "icon": "app"
+    },
+    {
+      "extensions": [
+        ".lighthouseci"
+      ],
+      "format": "svg",
+      "icon": "lighthouse-ci"
+    },
+  ],
+
+
+  "vsicons.projectDetection.autoReload": true,
+  "vsicons.projectDetection.disableDetect": false,
+
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    // "editor.codeActionsOnSave": {
+    //   "source.fixAll.eslint": "explicit"
+    // },
+    "editor.formatOnSave": true
+  },
+
+  "[javascript][typescript]": {
+    // "editor.codeActionsOnSave": {
+    //   "source.fixAll.eslint": "explicit"
+    // }
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[python]": {
+    "editor.formatOnType": true
+  },
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // "editor.codeActionsOnSave": {
+    //   "source.fixAll.eslint": "explicit",
+    // },
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false
+  },
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+}
