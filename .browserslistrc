@@ -1,0 +1,36 @@
+# This file is used by the build system to adjust CSS and JS output to support the specified browsers below.
+# For additional information regarding the format and rule options, please see:
+# https://github.com/browserslist/browserslist#queries
+
+# You can see what browsers were selected by your queries by running:
+#   npx browserslist
+#
+# Check for errors in .browserslistrc
+#   npx browserslist-lint
+
+[production]
+defaults,
+cover 99.5%,
+last 2 major versions,
+not dead
+
+[legacy]
+defaults,
+> 5%,
+not dead
+
+[modern]
+defaults,
+supports es6-module,
+last 2 major versions,
+last 2 Chrome version,
+last 2 Firefox version,
+last 2 Safari version,
+> 5%,
+not dead
+
+[ssr]
+node 20,
+current node,
+maintained node versions,
+not dead
