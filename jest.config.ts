@@ -55,6 +55,7 @@ export default (): Config => ({
     '<rootDir>/bin',
     '<rootDir>/packages',
     '<rootDir>/tests',
+    '<rootDir>/src',
   ],
   setupFiles: [],
   setupFilesAfterEnv: [],
