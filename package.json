@@ -14,7 +14,7 @@
     "url": "https://github.com/JBreit/innermindco/issues"
   },
   "type": "commonjs",
-  "main": "./src/index.ts",
+  "main": "./dist/index.js",
   "directories": {
     "doc": "docs",
     "test": "tests"
