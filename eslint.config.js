@@ -53,8 +53,6 @@ module.exports = [
       'LICENSE',
       'CHANGELOG.md',
       'TODO.md',
-      '**/*.spec.{js,ts}',
-      '**/*.d.{cts,mts,ts}',
       '/.*',
       '.*',
     ],
@@ -91,6 +89,7 @@ module.exports = [
         project: [
           `${__dirname}/packages/*/tsconfig.json`,
           `${__dirname}/tsconfig.eslint.json`,
+          `${__dirname}/tsconfig.test.json`,
           `${__dirname}/tsconfig.json`,
         ],
         tsconfigRootDir: __dirname,
@@ -121,7 +120,6 @@ module.exports = [
       'getter-return': OFF,
 
       'implicit-arrow-linebreak': OFF,
-      // 'implicit-arrow-linebreak': [ERROR, 'beside'],
 
       'import/extensions': [
         ERROR,
@@ -141,8 +139,10 @@ module.exports = [
         ERROR,
         {
           devDependencies: [
-            '**/*.test.ts',
-            '**/*.spec.ts',
+            'eslint.config.js',
+            'packages/**/src/*.{test,spec}.{cts,mts,ts,tsx}',
+            'src/**/*.{test,spec}.{cts,mts,ts,tsx}',
+            '**/*.{test,spec}.{cts,mts,ts,tsx}',
           ],
           optionalDependencies: false,
           peerDependencies: true,
