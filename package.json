@@ -52,7 +52,8 @@
     "packages/*"
   ],
   "peerDependencies": {
-    "@commitlint/cz-commitlint": "^19.2.0"
+    "@commitlint/cz-commitlint": "^19.2.0",
+    "@jest/globals": "^29.7.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
