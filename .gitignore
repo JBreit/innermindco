@@ -50,6 +50,7 @@ jspm_packages/
 # Optional directories
 .github/
 .lighthouseci/
+.ssh/*
 certs/*
 records/
 temp/*
