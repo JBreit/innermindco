@@ -8,11 +8,11 @@
     "node_modules",
     "packages/**/dist",
     "tools/cz.adapter.cjs",
-    "src/**/*.spec.ts",
-    "src/**/*.spec.tsx"
+    "**/*.spec.ts",
+    "**/*.spec.tsx"
   ],
   "include": [
     "eslint.config.js",
-    "src"
+    "**/*.ts"
   ]
 }
