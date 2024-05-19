@@ -15,6 +15,12 @@ module.exports = {
       },
     },
     {
+      files: ['**/*.ts', '**/*.tsx'],
+      options: {
+        printWidth: 120,
+      },
+    },
+    {
       files: ['**/*.html', '**/*.htm'],
       options: {
         embeddedLanguageFormatting: 'auto',
