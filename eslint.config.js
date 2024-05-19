@@ -1,3 +1,4 @@
+const process = require('node:process');
 const { FlatCompat } = require('@eslint/eslintrc');
 const js = require('@eslint/js');
 const tsParser = require('@typescript-eslint/parser');
@@ -194,12 +195,12 @@ module.exports = [
         },
       ],
 
+      'jsx-quotes': [ERROR, 'prefer-single'],
+
       'linebreak-style': [
         ERROR,
         process.platform !== 'win32' ? 'linux' : 'windows',
       ],
-
-      'jsx-quotes': [ERROR, 'prefer-single'],
 
       'no-alert': process.env.NODE_ENV === 'production' ? ERROR : OFF,
       'no-console': process.env.NODE_ENV === 'production' ? ERROR : OFF,
@@ -279,19 +280,6 @@ module.exports = [
 
       'comma-dangle': OFF,
       '@typescript-eslint/comma-dangle': OFF,
-      // '@typescript-eslint/comma-dangle': [
-      //   ERROR,
-      //   {
-      //     arrays: 'always-multiline',
-      //     generics: 'always',
-      //     enums: 'always',
-      //     exports: 'always-multiline',
-      //     functions: 'never',
-      //     imports: 'always-multiline',
-      //     objects: 'always-multiline',
-      //     tuples: 'always',
-      //   },
-      // ],
 
       '@typescript-eslint/consistent-type-exports': [
         ERROR,
@@ -320,39 +308,23 @@ module.exports = [
   {
     settings: {
       'import/extensions': [
-        '.cjs',
-        '.cts',
-        '.js',
+        '.{cjs,js,jsx,mjs}',
+        '.{cts,mts,ts,tsx}',
+        '*.d.{cts,mts,ts}',
         '.json',
-        '.jsx',
-        '.mjs',
-        '.mts',
         '.node',
-        '.ts',
-        '.tsx',
-        '*.d.cts',
-        '*.d.mts',
-        '*.d.ts',
       ],
       'import/parser': {
-        '@typescript-eslint/parser': ['.ts', '.tsx'],
+        '@typescript-eslint/parser': ['.cts', '.mts', '.ts', '.tsx'],
       },
       'import/resolver': {
         node: {
           extensions: [
-            '.cjs',
-            '.cts',
-            '.js',
+            '.{cjs,js,jsx,mjs}',
+            '.{cts,mts,ts,tsx}',
+            '*.d.{cts,mts,ts}',
             '.json',
-            '.jsx',
-            '.mjs',
-            '.mts',
             '.node',
-            '.ts',
-            '.tsx',
-            '*.d.cts',
-            '*.d.mts',
-            '*.d.ts',
           ],
           moduleDirectory: [
             `${__dirname}/apps/*`,
@@ -362,11 +334,6 @@ module.exports = [
         },
         typescript: {
           alwaysTryTypes: true,
-          project: [
-            `${__dirname}/packages/*/tsconfig.json`,
-            `${__dirname}/tsconfig.eslint.json`,
-            `${__dirname}/tsconfig.json`,
-          ],
         },
       },
     },
